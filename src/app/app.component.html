@@ -1,20 +1,95 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTAgMjUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTAgMjUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojREQwMDMxO30NCgkuc3Qxe2ZpbGw6I0MzMDAyRjt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMTI1LDMwIDEyNSwzMCAxMjUsMzAgMzEuOSw2My4yIDQ2LjEsMTg2LjMgMTI1LDIzMCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAJIi8+DQoJPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIxMjUsMzAgMTI1LDUyLjIgMTI1LDUyLjEgMTI1LDE1My40IDEyNSwxNTMuNCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAxMjUsMzAgCSIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMjUsNTIuMUw2Ni44LDE4Mi42aDBoMjEuN2gwbDExLjctMjkuMmg0OS40bDExLjcsMjkuMmgwaDIxLjdoMEwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMQ0KCQlMMTI1LDUyLjF6IE0xNDIsMTM1LjRIMTA4bDE3LTQwLjlMMTQyLDEzNS40eiIvPg0KPC9nPg0KPC9zdmc+DQo=">
+<div class="jumbotron">
+<img src="assets/minerva.png" width=20% height=auto>
+<h3>Cadastro de Usuários</h3>
+<form name= "cadastro">
+    <select class="form-control" name="situacaoUFRJ" ng-required="true">
+        <option value="">Situacao UFRJ</option>
+        <option value="interno">Interno</option>
+        <option value="externo">Externo</option>
+      </select>
+    <select class="form-control" name="situacaoUFRJInternoDetalhada" ng-required="true">
+        <option value="">Escolha uma opção</option>
+        <option value="aluno">Aluno</option>
+        <option value="docente">Docente</option>
+        <option value="tecnicoadm">Técnico Administrativo</option>
+    </select> 
+    <input class="form-control" type="text" name="siape"  placeholder="SIAPE">
+    <select class="form-control" name="cargo" ng-required="true">
+      <option value="">Cargo</option>
+      <option value="cargo1">Cargo 1</option>
+      <option value="cargo2">Cargo 2</option>
+    </select>    
+    <input class="form-control" type="text" name="unidade"  placeholder="Unidade">
+    <select class="form-control" name="classe" ng-required="true">
+        <option value="">Classe</option>
+        <option value="a">A</option>
+        <option value="b">B</option>
+        <option value="c">C</option>
+        <option value="d">D</option>
+        <option value="e">E</option>
+    </select>
+    <select class="form-control" name="capacitacao" ng-required="true">
+        <option value="">Capacitação</option>
+        <option value="1">I</option>
+        <option value="2">II</option>
+        <option value="3">III</option>
+        <option value="4">IV</option>        
+    </select> 
+    <input class="form-control" type="text" name="nome"  placeholder="Nome Completo">
+    <input class="form-control" type="date" name="data_nascimento"  placeholder="Data de Nascimento">
+    <select class="form-control" name="sexo" ng-required="true">
+        <option value="">Sexo</option>
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+    </select> 
+    <input class="form-control" type="text" name="pai"  placeholder="Nome do Pai">
+    <input class="form-control" type="text" name="mae"  placeholder="Nome da Mãe">
+    <select class="form-control" name="formacao" ng-required="true">
+        <option value="">Formação</option>
+        <option value="fundamental">Ensino Fundamental</option>
+        <option value="medio">Ensino Médio</option>
+        <option value="graduacao">Graduação</option>
+        <option value="mestrado">Mestrado</option>
+        <option value="doutorado">Doutorado</option>
+    </select> 
+    <input class="form-control" type="text" name="rg"  placeholder="Identidade">
+    <input class="form-control" type="text" name="expedição"  placeholder="Expedição">
+    <input class="form-control" type="text" name="orgaoemissor"  placeholder="Órgão Emissor">
+    <select class="form-control" name="uforgaoemissor" ng-required="true">
+        <option value="">UF - Orgão Emissor</option>
+        <option value="AC">Acre</option>
+        <option value="AL">Alagoas</option>
+        <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="ES">Espírito Santo</option>
+        <option value="GO">Goiás</option>
+        <option value="MA">Maranhão</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="PA">Pará</option>
+        <option value="PB">Paraíba</option>
+        <option value="PR">Paraná</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PI">Piauí</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RO">Rondônia</option>
+        <option value="RR">Roraima</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+        <option value="SE">Sergipe</option>
+        <option value="TO">Tocantins</option>
+    </select> 
+    <input class="form-control" type="text" name="cpf"  placeholder="CPF">
+    <input class="form-control" type="text" name="telresidencial"  placeholder="Telefone Residencial">
+    <input class="form-control" type="text" name="telcomercial"  placeholder="Telefone Comercial">
+    <input class="form-control" type="text" name="telcelular"  placeholder="Telefone Celular">
+    <br>
+    <button class="btn btn-primary btn-block">Cadastrar Usuário</button>
+</form>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://blog.angular.io//">Angular blog</a></h2>
-  </li>
-</ul>
-
